@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+    <link rel="stylesheet" href="CSS/dados-pessoais.css">
+</head>
+
+<body>
+    <h1>Dados pessoais</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="#" method="post">
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" 
+            size="50" maxlength="100" placeholder="Insira seu nome"
+            autofocus autocomplete="off">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+            size="50" maxlength="100" placeholder="Insira seu e-mail"
+            autocomplete="off">
+            <br>
+            <br>
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" name="tel"
+            size="50" maxlength="100" placeholder="(99) 9999-9999"
+            autocomplete="off">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Selecione</legend>
+        <label>Preferencias</label>
+        <input list="preferencias">
+        <datalist id="preferencias">
+            <option value="Livro"></option>
+            <option value="Esporte"></option>
+            <option value="Comer"></option>
+            <option value="Jogar"></option>
+            <option value="Estudar"></option>
+            <option value="Dormir"></option>
+        </datalist>
+        <br>
+        <br>
+        <label for="Listar">Festa Junina</label>
+        <select name="listar" id="listar">
+            <option value="#"></option>
+            <option value="pipoca">Pipoca</option>
+            <option value="doce-de-leite">Doce de Leite</option>
+            <option value="arroz-doce">Arroz Doce</option>
+            <option value="pescaria">Pescaria</option>
+            <option value="pacoca">Paçoca</option>
+        </select>
+    </fieldset>
+
+</form>
+</body>
+</html>

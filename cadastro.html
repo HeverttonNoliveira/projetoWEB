@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <fieldset>
+        <legend>Cadastro</legend>
+
+    <form action="#" method="post">
+        <label for="codigo">Código:</label>  
+        <input type="number" name="codigoProduto" id="codigo" readonly/>
+        <br><br>
+
+        <label for="descProd">Descrição:</label>
+        <input type="text" name="descProd" id="descProd" placeholder="Insira o Nome do Veiculo" maxlength="100" size="50">
+        <br><br>
+
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" size="50">
+        <br><br>
+
+        <label for="prodSelect">Selecione o Produto:</label>
+        <br>
+
+        <select name="prodSelect" id="prodSelect">
+            <option value="ferrari">Ferrari</option><br>
+            <option value="audi">Audi</option><br>
+            <option value="bmw">Bmw</option><br>
+            <option value="hotweels">Hotwheels</option><br>
+            <option value="ford">Ford</option><br>
+            <option value="Lamborghini">Lamborghini</option><br>
+            <option value="bugati">Bugati</option><br>
+        </select>
+        <br><br>
+
+        <label>Escolha</label><br>
+        <input type="checkbox" name="esportivo" id="esportivo"> <label for="esportivo">Esportivo</label> <br>
+        <input type="checkbox" name="suv" id="suv"> <label for="suv">SUV</label> <br>
+        <input type="checkbox" name="sedans" id="sedans"> <label for="sedans">Sedans</label> <br >
+        <br>
+        
+        <label>Forma de Pagamento:</label> <br>
+        <input type="radio" name="formapagato" id="debito"><label for="debito">Débito</label>
+        <input type="radio" name="formapagato" id="credito"><label for="credito">Crédito</label>
+        <br>
+
+        <input type="submit" name="Enviar" id="enviar" value="Enviar">
+        <input type="reset" name="Redefinir" id="redefinir" value="Redefinir"> <br>
+    </form>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Selecione</legend>
+    <label for="preferencias">Preferencias</label>
+    <input list="preferencias">
+    <datalist id="preferencias">
+        <option value="Livro"></option>
+        <option value="Esporte"></option>
+        <option value="Comer"></option>
+        <option value="Jogar"></option>
+        <option value="Estudar"></option>
+        <option value="Dormir"></option>
+    </datalist>
+</fieldset>
+
+
+</body>
+</html>
